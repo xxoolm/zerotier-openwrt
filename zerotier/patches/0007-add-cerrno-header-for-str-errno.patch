@@ -1,7 +1,7 @@
-From e06177a74f1e4314baf17c52f360dabcb78e69cd Mon Sep 17 00:00:00 2001
+From 37f8ea2259c0e731c1a280f22467ffdce45d400c Mon Sep 17 00:00:00 2001
 From: Moritz Warning <moritzwarning@web.de>
 Date: Sun, 29 Nov 2020 19:45:36 +0100
-Subject: [PATCH 7/8] add cerrno header for (str)errno
+Subject: [PATCH 7/9] add cerrno header for (str)errno
 
 Fixes compilation under libcxx.
 
@@ -24,5 +24,5 @@ index 421da1f6..b7c13edf 100644
  #define IFNAMSIZ 16
  #endif
 -- 
-2.29.2
+2.31.1
 

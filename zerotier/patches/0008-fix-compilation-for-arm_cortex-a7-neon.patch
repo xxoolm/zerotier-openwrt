@@ -1,7 +1,7 @@
-From 7ac88ced6cdedf88ccebfc1de12d92b269d4a60a Mon Sep 17 00:00:00 2001
+From 1128d8563e4fc67fc3fa44f82b5f46b5827fa757 Mon Sep 17 00:00:00 2001
 From: Moritz Warning <moritzwarning@web.de>
 Date: Mon, 30 Nov 2020 12:25:42 +0100
-Subject: [PATCH 8/8] fix compilation for arm_cortex-a7+neon
+Subject: [PATCH 8/9] fix compilation for arm_cortex-a7+neon
 
 Fixes "error: 'vrbitq_u8' was not declared in this scope"
 
@@ -24,5 +24,5 @@ index 400976c1..eccc3a31 100644
  #ifdef ZT_ARCH_ARM_HAS_NEON
  #undef ZT_ARCH_ARM_HAS_NEON
 -- 
-2.29.2
+2.31.1
 

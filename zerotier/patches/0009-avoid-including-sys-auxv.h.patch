@@ -1,0 +1,28 @@
+From 4f2b2af1bec237fbb6820e05a3a90606c38518b3 Mon Sep 17 00:00:00 2001
+From: Moritz Warning <moritzwarning@web.de>
+Date: Mon, 26 Apr 2021 21:04:30 +0200
+Subject: [PATCH 9/9] avoid including sys/auxv.h
+
+It seems it's not needed and not supported under uClibc-ng.
+
+Signed-off-by: Rosen Penev <rosenp@gmail.com>
+---
+ node/Utils.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/node/Utils.cpp b/node/Utils.cpp
+index 34532698..fd0356ee 100644
+--- a/node/Utils.cpp
++++ b/node/Utils.cpp
+@@ -28,7 +28,7 @@
+ #include <sys/stat.h>
+ #include <sys/uio.h>
+ #include <dirent.h>
+-#ifdef __LINUX__
++#if 0
+ #include <sys/auxv.h>
+ #endif
+ #endif
+-- 
+2.31.1
+

@@ -1,14 +1,14 @@
-From de625c51dba36b390c93a1db00b19b6112178764 Mon Sep 17 00:00:00 2001
+From df66869771cb3771457d557fe8d6b5fda1a6da3b Mon Sep 17 00:00:00 2001
 From: Moritz Warning <moritzwarning@web.de>
 Date: Sat, 21 Nov 2020 17:53:28 +0100
-Subject: [PATCH 5/8] link natpmp
+Subject: [PATCH 5/9] link natpmp
 
 ---
  make-linux.mk | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/make-linux.mk b/make-linux.mk
-index d358ecfb..cbee51c3 100644
+index 258bfab5..857b303d 100644
 --- a/make-linux.mk
 +++ b/make-linux.mk
 @@ -34,7 +34,7 @@ else
@@ -21,5 +21,5 @@ index d358ecfb..cbee51c3 100644
  else
  	LDLIBS+=-lnatpmp
 -- 
-2.29.2
+2.31.1
 
